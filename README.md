@@ -6,4 +6,4 @@ This is a Website using HTML, CSS, Javascipt, MongoDB stack for getting weather 
 1. In command Prompt type -- npm init
 2. After type -- code .
 3. Import all files into your IDE from this repository
-4. In the terminal of your IDE, type -- nodemon script.js
+4. In the terminal of your IDE, type -- nodemon script.js 
