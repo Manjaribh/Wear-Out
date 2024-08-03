@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+
+    /* help from https://cssgradient.io/ */
+    background: rgb(151, 143, 205);
+    background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgb(204, 135, 185) 100%);
+}
+
+/* Navigation */
+#navbar {
+    background-color: #FFFCFB;
+    border-bottom: 1px solid #978FCD;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbarNav {
+    padding: 0;
+    padding-right: 30px;
+    background-color: #FFFCFB;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-left: 30px;
+}
+
+/* Style for the logo */
+#logo {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Position the logo in the top-left corner */
+.navbar-brand {
+    position: absolute;
+    top: 25px; /* Adjust the top position as needed */
+    left: 15px; /* Adjust the left position as needed */
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        margin-left: 25px;
+    }
+    #content-recommendations-preview {
+        margin-bottom: 30px;
+    }
+
+    #content-additional-text {
+    max-width: 285px;
+    display: block;
+    margin: 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar-brand {
+        margin-left: 10px;
+    }
+}
+/* Navigation */
+
+/* Header */
+.header-content {
+    margin-top: 10vh;
+}
+
+#header-title {
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px;
+    letter-spacing: 9px;
+    color: #FFFCFB;
+}
+
+.header-paragraph {
+    color: #FFFCFB;
+    max-width: 395px;
+    display: block;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+/* Header */
+
+/* Main content */
+.section-content {
+    background-color: #FFFCFB;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.content-box {
+    margin-top: 35px;
+}
+
+.content-row {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.class-ml-15 {
+    margin-left: 15px;
+}
+
+.class-mr-15 {
+    margin-right: 15px;
+}
+
+.class-mb-15 {
+    margin-bottom: 15px;
+}
+
+.class-mt-15 {
+    margin-top: 15px;
+}
+
+.disclaimer {
+    color: #978FCD;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (min-width: 992px) {
+    .disclaimer-top {
+        display: none;
+    }
+    .disclaimer-bottom {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 992px) {
+    .disclaimer-top {
+        max-width: 320px;
+    }
+    .disclaimer-bottom {
+        display: none;
+    }
+}
+
+/* Shortcuts */
+.city-content {
+    width: 125px;
+    float: left;
+}
+
+.city-content p {
+    padding-top: 10px;
+    font-size: 14px;
+}
+/* Shortcuts */
+
+/* Additional content */
+#content-additional-text {
+    background: rgb(206,202,232);
+    background: linear-gradient(90deg, rgb(206, 202, 232) 0%, rgba(236,206,228,1) 100%);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+    #content-additional-text {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1199px) {
+    #content-additional-text {
+        margin-top: 70px;
+    }
+}
+
+.h2-heading {
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 300;
+}
+
+#content-additional-text p {
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+/* Additional content */
+/* Main content */
+
+/* Footer */
+footer{
+    max-height: 70px;
+    background: rgb(151,143,205);
+    background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgba(204,135,185,1) 100%);
+    color: #FFFCFB;
+}
+
+.social-icons a img {
+    height: 20px;
+}
+
+.social-icons a {
+    margin-right: 40px;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
+.social-icons {
+    width: fit-content;
+    float: left;
+    position: relative;
+    bottom: 5px;
+}
+
+.copyrights {
+    width: fit-content;
+    font-size: 14px;
+    float: left;
+}
+
+@media (max-width: 460px) {
+    .copyrights {
+        float: none;
+        margin-top: 15px;
+    }
+
+    .social-icons {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .social-icons a {
+        margin: 0 20px;
+    }
+}
+
+#footer-content {
+    padding-top: 22.5px;
+    width: fit-content;
+    margin: 0 auto;
+}
+/* Footer */
+
+/* General styles and effects */
+.square {
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+}
+
+.square-hover {
+    box-sizing: border-box;
+    border: 3px solid #CC87B9;
+}
+
+.weather {
+    background-color: #FFF1EC;
+}
+
+.clothes {
+    background-color: #EFECFF;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    left: 45px;
+    top: 40px;
+}
+
+.weather-clothes-icon {
+    width: 60px;
+    display: block;
+    position: relative;
+    left: 35px;
+    bottom: 10px;
+}
+
+.shadow-main {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-hover {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.radius-small {
+    border-radius: 5px;
+}
+
+.line {
+    width: 45px;
+    height: 2px;
+    border-radius: 30%;
+    margin: 25px auto;
+}
+
+.light {
+    background-color: #FFFCFB;
+}
+
+.dark {
+    background-color: #978FCD;
+}
+
+.line-hp {
+    display: block;
+    position: relative;
+    top: -13px;
+}
+
+.regular-weight {
+    font-weight: 400;
+}
+
+.price-hp {
+    background-color: rgba(255, 252, 251, 0.7);
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 30px;
+    font-size: 14px;
+}
+
+@media (max-width: 345px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+    #content-additional-text {
+        max-width: 230px;
+    }
+
+    .city-content {
+        width: 100px;
+    }
+
+    .circle {
+        left: 30px;
+        top: 30px;
+    }
+
+    .weather-clothes-icon {
+        width: 50px;
+        left: 25px;
+        bottom: 15px;
+    }
+
+    .price-hp {
+        bottom: 30px;
+    }
+}
+/* General styles and effects */
+
+/* CITY */
+.clothes-square {
+    width: fit-content;
+    display: inline-block;
+}
+
+.content-forecast {
+    width: 300px;
+    height: 170px;
+    background: rgb(206,202,232);
+    background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
+    padding: 0;
+}
+
+.forecast-summary {
+    margin-top: 20px;
+}
+
+.forecast-square {
+    margin: 22px 0 0 10px;
+    float: left;
+}
+
+.recommended-item-square {
+    background-color: #EFECFF;
+    float: left;
+}
+
+.forecast-title {
+    float: left;
+    margin-top: 22px;
+    max-width: 157px;
+}
+
+.short-phrase {
+    padding-left: 10px;
+    position: relative;
+    top: 15px;
+}
+
+.long-phrase, .long-phrase-style {
+    font-size: 16px;
+    max-width: 300px;
+}
+
+#city-name-populated {
+    font-weight: 400;
+    background: -webkit-linear-gradient(left, #978FCD, #CC87B9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#recommendations .line-row-left .line {
+    margin: 20px 0 40px 15px;
+}
+
+.tip-box {
+    width: 25px;
+    height: 25px;
+    background-color: #F0F0F0;
+    display: inline-block;
+}
+
+.refresh-square {
+    width: 25px;
+    height: 25px;
+    background-color: #FFF1EC;
+    position: relative;
+    right: 7px;
+    top: 7px;
+}
+
+.refresh-icon {
+    margin-left: 7px;
+    margin-top: -3px;
+}
+
+.icon-active {
+/* based on .weather-clothes-icon */
+    left: -10px;
+}
+
+.forecast-text {
+    font-size: 14px;
+    position: relative;
+    top: 60px;
+    left: 15px;
+}
+
+.supporting-weather-icon-img {
+    width: 20px;
+    margin-left: 5px;
+    margin-top: -7px;
+}
+
+.arrow-icon {
+    margin-right: -3px;
+    margin-bottom: -2px;
+}
+
+.item-text {
+    position: relative;
+    top: 55px;
+}
+
+#content-recommendations-clothes {
+    margin-top: 35px;
+}
+
+.last-box{
+    background: rgb(206,202,232);
+    background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
+    width: 285px;
+}
+
+.last-box p {
+    width: 225px;
+    margin: 0 auto;
+    padding: 35px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 991px) {
+    #content-recommendations-clothes .content-row {
+        float: none!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content-recommendations-clothes .row {
+        float: none!important;
+    }
+
+    #content-recommendations-clothes .h2-heading {
+        text-align: center;
+    }
+
+    #content-recommendations-clothes .line {
+        float: none!important;
+    }
+    .last-box {
+        margin-bottom: 30px;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 345px) {
+    .last-box {
+        width: 260px;
+    }
+
+    .content-forecast {
+        width: 260px;
+    }
+
+    .short-phrase {
+        font-size: 16px;
+        width: 130px;
+    }
+
+    .forecast-text {
+        top: 75px;
+        left: 75px;
+    }
+
+    /* fix the icons' position and content */
+    .icon-active {
+        left: -5px;
+        bottom: 0px;
+        height: 40px;
+    }
+
+    .item-text {
+        font-size: 14px;
+        top: 30px;
+    }
+}
+/* CITY */
+
+/* Additional page elements */
+.scroll-up-circle {
+    border-radius: 50%;
+    background-color: #FFF1EC;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-up {
+    display: block;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+}
+
+.arrow-up {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 30%;
+    top: 20%;
+}
+
+.city-gallery {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.city-gallery p {
+    color: #FFFCFB;
+    font-size: 14px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.city-gallery-content {
+    height: 72px;
+    max-width: 290px;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+@media (min-width: 991px) {
+    .city-gallery-content {
+        max-width: 460px;
+    }
+}
+
+
+.city-gallery-content .city-name-img {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.city-gallery-content .first-city {
+    margin-left: 0;
+}
+
+.swipe-icon {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom: 3px;
+}
+
+#city-header-title {
+    font-family: "Quicksand", sans-serif;
+    font-size: 23px;
+    color: #FFFCFB;
+    font-weight: 300;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+/* Additional page elements */

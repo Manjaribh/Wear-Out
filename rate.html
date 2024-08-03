@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="ratingApp">
+<head>
+    <title>Rate Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="style_rate.css">
+</head>
+
+<body ng-controller="RatingController">
+    <h1 class="title">RATE US!</h1>
+    
+    <div class="form-container">
+        <form>
+            <div>
+                <label>Design:</label>
+                <select ng-model="designRating">
+                    <option ng-value="0">0</option>
+                    <option ng-value="1">1</option>
+                    <option ng-value="2">2</option>
+                    <option ng-value="3">3</option>
+                    <option ng-value="4">4</option>
+                    <option ng-value="5">5</option>
+                    <option ng-value="6">6</option>
+                    <option ng-value="7">7</option>
+                    <option ng-value="8">8</option>
+                    <option ng-value="9">9</option>
+                    <option ng-value="10">10</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>Ease of Navigation:</label>
+                <select ng-model="navigationRating">
+                    <option ng-value="0">0</option>
+                    <option ng-value="1">1</option>
+                    <option ng-value="2">2</option>
+                    <option ng-value="3">3</option>
+                    <option ng-value="4">4</option>
+                    <option ng-value="5">5</option>
+                    <option ng-value="6">6</option>
+                    <option ng-value="7">7</option>
+                    <option ng-value="8">8</option>
+                    <option ng-value="9">9</option>
+                    <option ng-value="10">10</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>Clothes Recommendation:</label>
+                <select ng-model="clothesRating">
+                    <option ng-value="0">0</option>
+                    <option ng-value="1">1</option>
+                    <option ng-value="2">2</option>
+                    <option ng-value="3">3</option>
+                    <option ng-value="4">4</option>
+                    <option ng-value="5">5</option>
+                    <option ng-value="6">6</option>
+                    <option ng-value="7">7</option>
+                    <option ng-value="8">8</option>
+                    <option ng-value="9">9</option>
+                    <option ng-value="10">10</option>
+                </select>
+            </div>
+            
+            <button ng-click="submitRating()">Submit</button>
+        </form>
+
+        <!-- Display Overall Average Rating -->
+        <div ng-show="overallRating" class="overall-rating">
+            <h2>Overall Average Rating: {{ overallRating }}</h2>
+            <p>Click <a href = "home.html">here</a> to go back </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

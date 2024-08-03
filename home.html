@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WEAR OUT </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        
+
+       
+        <nav class="navbar navbar-light fixed-top" id="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="wear-out-high-resolution-logo-black-transparent.svg" alt="Logo image" id="logo">
+            </a>
+        </nav>
+        
+        
+        <header class="container-fluid text-center" id="header">
+            <div class="row">
+                <div class="col header-content">
+                    <h1 id="header-title" class="text-uppercase"> WEAR OUT</h1>
+                    <div class="line light" id="main-header-line">
+                    </div>
+                    <p class="header-paragraph">
+                        Know what to wear based on the weather in your city! WEAR OUT - The best fashion spot for today, tomorrow, and any other rainy day!
+                        <br>
+                        <span class="text-uppercase">Select your city below!</span>
+                    </p>
+                    <div class="city-gallery d-none">
+                        <div class="city-gallery-content">
+                            <img src="Hyderabad.jpg" class="radius shadow-main city-name-img first-city Hyderabad" alt="Hyderabad">
+                            <img src="img-city-london.png" class="radius shadow-main city-name-img london" alt="London">
+                            <img src="img-city-paris.png" class="radius shadow-main city-name-img paris" alt="Paris">
+                            <img src="img-city-moscow.png" class="radius shadow-main city-name-img moscow" alt="Moscow">
+                            <img src="Delhi.jpg" class="radius shadow-main city-name-img delhi" alt="New Delhi">
+                            <img src="img-city-shanghai.png" class="radius shadow-main city-name-img shanghai" alt="Shanghai">
+                            <img src="reykjavik.jpg" class="radius shadow-main city-name-img reykjavik" alt="Reykjavik">
+                            <img src="karaikal.jpg" class="radius shadow-main city-name-img karaikal" alt="Karaikal">
+                        </div>
+                        <p>Swipe to select another city!
+                            <img src="svg-icon-swipe-right.svg" class="swipe-icon" alt="Swipe right icon">
+                        </p>
+                    </div>
+                    <div class="line light d-none" id="city-header-line">
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <section class="container-fluid section-content" id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="content-row class-mt-15 disclaimer-top">
+                        <p class="text-center disclaimer d-block class-mt-15">
+                            IMPORTANT: This project is limited to 50 free API calls per day. The number is refreshed around 2.30 pm
+                            CET. If you click on a city and the app doesn't seem to display the content well, please check
+                            WEAR OUT the next day again - you will love it! :)
+                        </p>
+                    </div>
+                    <div class="col-lg-4 content-shortcuts">
+                        <div class="content-box">
+                            <div class="content-row d-lg-none">
+                                <div class="line dark">
+                                </div>
+                            </div>
+                            <div class="content-row">
+                                <div class="city-content class-mr-15">
+                                    <img src="Hyderabad.jpg" class="square shadow-main radius city-name-img Hyderabad" alt="Hyderabad">
+                                    <p class="text-center city-name">Hyderabad</p>
+                                </div>
+                                <div class="city-content class-ml-15">
+                                    <img src="img-city-london.png" class="square shadow-main radius city-name-img london" alt="London">
+                                    <p class="text-center city-name">London</p>
+                                </div>
+                            </div>
+                            <div class="content-row">
+                                <div class="city-content class-mr-15">
+                                    <img src="img-city-paris.png" class="square shadow-main radius city-name-img paris" alt="Paris">
+                                    <p class="text-center city-name">Paris</p>
+                                </div>
+                                <div class="city-content class-ml-15">
+                                    <img src="img-city-moscow.png" class="square shadow-main radius city-name-img moscow" alt="Moscow">
+                                    <p class="text-center city-name">Moscow</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-row d-lg-none">
+                        <div class="line dark line-hp">
+                        </div>
+                    </div>
+                    <div class="col-lg-4" id="content-additional">
+                        <div class="content-box text-center shadow-main" id="content-additional-text">
+                            <div class="line light">
+                            </div>
+                            <div id="demo">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <img src='logo-color.svg    ' width='100' height='100'>
+                                    <button type="button" onclick="loadDoc()">Click Here</button>
+                                </div>
+                                
+                                </div>
+                                
+                                <script>
+                                function loadDoc() {
+                                  const xhttp = new XMLHttpRequest();
+                                  xhttp.onload = function() {
+                                    document.getElementById("demo").innerHTML =
+                                    this.responseText;
+                                  }
+                                  xhttp.open("GET", "info.txt");
+                                  xhttp.send();
+                                }
+                                </script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 content-shortcuts">
+                        <div class="content-box">
+                            <div class="content-row d-lg-none">
+                                <div class="line dark">
+                                </div>
+                            </div>
+                           
+                            <div class="content-row">
+                                <div class="city-content class-mr-15">
+                                    <img src="Delhi.jpg" class="square shadow-main radius city-name-img delhi" alt="New Delhi">
+                                    <p class="text-center city-name">New Delhi</p>
+                                </div>
+                                <div class="city-content class-ml-15">
+                                    <img src="img-city-shanghai.png" class="square shadow-main radius city-name-img shanghai" alt="Shanghai">
+                                    <p class="text-center city-name">Shanghai</p>
+                                </div>
+                            </div>
+                            <div class="content-row">
+                                <div class="city-content class-mr-15">
+                                    <img src="reykjavik.jpg" class="square shadow-main radius city-name-img reykjavik" alt="Reykjavik">
+                                    <p class="text-center city-name">Reykjavik</p>
+                                </div>
+                                <div class="city-content class-ml-15">
+                                    <img src="karaikal.jpg" class="square shadow-main radius city-name-img karaikal" alt="Karaikal">
+                                    <p class="text-center city-name">Karaikal</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-row d-lg-none">
+                        <div class="line dark line-hp">
+                        </div>
+                    </div>
+                    <div class="content-row class-mt-15 class-mb-15 disclaimer-bottom">
+                        <p class="text-center disclaimer">
+                            Love us? Think we need to improve? Let us know by rating us and giving your feedback <a href="rate.html">here</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-md-none scroll-up">
+                    <div class="scroll-up-circle shadow-main">
+                        <img src="svg-icon-arrow-up-purple.svg" alt="Arrow Up" class="arrow-up">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container-fluid section-content d-none" id="city-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4" id="content-weather-summary">
+                        <div class="content-box">
+                            <div class="content-row">
+                                <h2 class="h2-heading text-uppercase text-center">What to expect in <span id="city-name-populated">THIS CITY</span>?</h2>
+                            </div>
+                            <div class="content-row">
+                                <div class="content-forecast radius shadow-main">
+                                    <div class="forecast-summary">
+                                        <div class="square weather forecast-square radius shadow-main">
+                                            <div class="weather-icon">
+                                                <div class="circle">
+                                                    <img src="svg-icon-happy.svg" id="main-weather-icon" class="weather-clothes-icon icon-active" alt="Main weather icon">
+                                                </div>
+                                            </div>
+                                            <p class="forecast-text">
+                                                <img src="svg-icon-arrow-up.svg" class="arrow-icon" alt="Arrow up">
+                                                <span class="max-temperature">0</span>°C
+                                                <img src="svg-icon-arrow-down.svg" class="arrow-icon" alt="Arrow down">
+                                                <span class="min-temperature">0</span>°C
+                                                <img src="svg-icon-happy.svg" id="secondary-weather-icon" class="supporting-weather-icon-img" alt="Secondary weather icon">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="forecast-title">
+                                        <h2 class="short-phrase h2-heading text-uppercase text-center">Cooler with a shower or two</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-row">
+                                <h2 class="h2-heading class-mt-15 long-phrase-style">
+                                    <span class="long-phrase">Some sun, then turning cloudy and very warm</span>.
+                                    The real-feel temperature today will be between
+                                    <span class="feel-max-temperature">0</span>°C and
+                                    <span class="feel-min-temperature">0</span>°C.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8" id="content-recommendations-clothes">
+                        <!-- intro -->
+                        <div class="content-row float-left class-mb-15">
+                            <h2 class="h2-heading text-uppercase text-left">Today you will need: </h2>
+                        </div>
+                        <div class="content-row float-left">
+                            <p class="description">
+                                 Here are the items you might need today!
+                               
+                              
+                               
+                            </p>
+                            <div class="line dark float-left">
+                            </div>
+                        </div>
+                        
+                        <div class="row float-left">
+                            <div class="col-lg-6 column-1">
+                                
+                                <div class="recommended-item-box class-mb-15 content-row" id="recommendation-1">
+                                    <div class="content-row">
+                                        <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                            <div class="clothes-icon">
+                                                <div class="refresh-square radius shadow-main float-right" id="refresh-square-1">
+                                                    <img src="svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                                </div>
+                                                <div class="circle">
+                                                    <img src="svg-icon-happy.svg" id="clothes-top" class="weather-clothes-icon icon-active" alt="Clothes icon">
+                                                </div>
+                                            </div>
+                                            <p class="item-text text-center">
+                                                <span class="item-name text-uppercase" id="item-name-top">TOP</span>
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="content-row">
+                                        <div class="line dark">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recommended-item-box class-mb-15 content-row" id="recommendation-2">
+                                    <div class="content-row">
+                                        <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                            <div class="clothes-icon">
+                                                <div class="refresh-square radius shadow-main float-right" id="refresh-square-2">
+                                                    <img src="svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                                </div>
+                                                <div class="circle">
+                                                    <img src="svg-icon-happy.svg" id="clothes-bottom" class="weather-clothes-icon icon-active" alt="Clothes icon">
+                                                </div>
+                                            </div>
+                                            <p class="item-text text-center">
+                                                <span class="item-name text-uppercase" id="item-name-bottom">BOTTOM</span>
+                                            </p>
+                                        </div>
+                                      
+                                    </div>
+                                    
+                                    <div class="content-row">
+                                        <div class="line dark">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recommended-item-box class-mb-15 content-row" id="recommendation-3">
+                                    <div class="content-row">
+                                        <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                            <div class="clothes-icon">
+                                                <div class="refresh-square radius shadow-main float-right" id="refresh-square-3">
+                                                    <img src="svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                                </div>
+                                                <div class="circle">
+                                                    <img src="svg-icon-happy.svg" id="clothes-footwear" class="weather-clothes-icon icon-active" alt="Clothes icon">
+                                                </div>
+                                            </div>
+                                            <p class="item-text text-center">
+                                                <span class="item-name text-uppercase" id="item-name-footwear">FOOTWEAR</span>
+                                            </p>
+                                        </div>
+                                      
+                                    </div>
+                                   
+                                    <div class="content-row">
+                                        <div class="line dark">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="recommended-item-box class-mb-15 content-row" id="recommendation-4">
+                                    <div class="content-row">
+                                        <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                            <div class="clothes-icon">
+                                                <div class="refresh-square radius shadow-main float-right" id="refresh-square-4">
+                                                    <img src="svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                                </div>
+                                                <div class="circle">
+                                                    <img src="svg-icon-happy.svg" id="clothes-outerwear" class="weather-clothes-icon icon-active" alt="Clothes icon">
+                                                </div>
+                                            </div>
+                                            <p class="item-text text-center">
+                                                <span class="item-name text-uppercase" id="item-name-outerwear">OUTERWEAR</span>
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="content-row d-lg-none">
+                                        <div class="line dark">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 column-2">
+                                
+                                <div class="recommended-item-box class-mb-15 content-row" id="recommendation-5">
+                                    <div class="content-row">
+                                        <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                            <div class="clothes-icon">
+                                                <div class="refresh-square radius shadow-main float-right" id="refresh-square-5">
+                                                    <img src="svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                                </div>
+                                                <div class="circle">
+                                                    <img src="svg-icon-happy.svg" id="clothes-additional" class="weather-clothes-icon icon-active" alt="Clothes icon">
+                                                </div>
+                                            </div>
+                                            <p class="item-text text-center">
+                                                <span class="item-name text-uppercase" id="item-name-additional">ADDITIONAL</span>
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="content-row">
+                                        <div class="line dark">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recommended-item-box class-mb-15 content-row" id="recommendation-6">
+                                    <div class="content-row">
+                                        <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                            <div class="clothes-icon">
+                                                <div class="refresh-square radius shadow-main float-right" id="refresh-square-6">
+                                                    <img src="svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                                </div>
+                                                <div class="circle">
+                                                    <img src="svg-icon-clothes-bag.svg" id="clothes-bag" class="weather-clothes-icon icon-active" alt="Clothes icon">
+                                                </div>
+                                            </div>
+                                            <p class="item-text text-center">
+                                                <span class="item-name text-uppercase" id="item-name-bag">Bag</span>
+                                            </p>
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                    <div class="content-row">
+                                        <div class="line dark">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recommended-item-box class-mb-15 content-row" id="recommendation-7">
+                                    <div class="content-row">
+                                        <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                            <div class="clothes-icon">
+                                                <div class="refresh-square radius shadow-main float-right" id="refresh-square-7">
+                                                    <img src="svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                                </div>
+                                                <div class="circle">
+                                                    <img src="svg-icon-clothes-accessories.svg" id="clothes-accessories" class="weather-clothes-icon icon-active" alt="Clothes icon">
+                                                </div>
+                                            </div>
+                                            <p class="item-text text-center">
+                                                <span class="item-name text-uppercase" id="item-name-accessories">Accessories</span>
+                                            </p>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                    <div class="content-row">
+                                        <div class="line dark">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-none scroll-up">
+                    <div class="scroll-up-circle shadow-main">
+                        <img src="svg-icon-arrow-up-purple.svg" alt="Arrow Up" class="arrow-up">
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <footer>
+            <div id="footer-content">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="svg-icon-facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="svg-icon-instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.pinterest.com" target="_blank">
+                        <img src="svg-icon-pinterest.svg" alt="Pinterest">
+                    </a>
+                </div>
+                <div class="copyrights">
+                    <p>
+                        © WEAR OUT, Hyderabad
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <script src="product.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
